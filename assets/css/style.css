@@ -192,7 +192,7 @@ h6 {
 #hero:before {
   content: "";
   background-size: 50%;
-  background: url("../img/AAO_Logo.PNG") no-repeat center center;
+  background: url("../img/AAO_Logo.png") no-repeat center center;
   /* background-size: contain; */
   background-size: 50%;
   position: absolute;
