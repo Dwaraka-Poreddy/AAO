@@ -37,30 +37,27 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
 
-    <script>
+    <!-- <script>
       window.console = window.console || function (t) {};
     </script>
     <script>
       if (document.location.search.match(/type=embed/gi)) {
         window.parent.postMessage("resize", "*");
       }
-    </script>
+    </script> -->
   </head>
 
   <body>
     <!-- ======= Header ======= -->
     <header
-      style="transition-delay: 10s;"
+      style="transition-delay: 10s; align-content: center; align-items: center;"
       id="header"
       class="header-transparent"
     >
       <div class="container">
         <div id="logo" class="pull-left wrapper">
           <a href="index.html"
-            ><img
-              style="width: 120px; margin-top: -17px;"
-              src="assets/img/AAO_Logo.PNG"
-              alt=""
+            ><img style="width: 90px;" src="assets/img/AAO_Logo.PNG" alt=""
           /></a>
         </div>
 
@@ -84,7 +81,7 @@
       <!-- <img id="PreLoadImage" src="assets/img/AAO_Logo.PNG" /> -->
       <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
         <img
-          style="height: 300px; margin-bottom: 30px;"
+          style="height: 200px; margin-bottom: 30px;"
           src="assets/img/logo0.png"
         />
         <!-- <h1>We are AAO</h1> -->
@@ -151,7 +148,7 @@
     <script id="rendered-js">
       var tl = new TimelineMax({});
       tl.add(
-        TweenMax.from(".wrapper", 8, {
+        TweenMax.from(".wrapper", 4, {
           scale: 3,
           // rotation: 180,
           opacity: 0,

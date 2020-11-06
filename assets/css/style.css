@@ -120,6 +120,7 @@ h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
+  box-shadow: 2px 1px 2px #eee;
   /* background: rgba(52, 59, 64, 0.9); */
 }
 
@@ -163,13 +164,13 @@ h6 {
   box-shadow: 2px 1px 2px #eee;
 }
 
-#header.header-fixed {
-  /* background: rgba(149, 158, 165, 0.9); */
+/* #header.header-fixed {
+
   padding: 20px 0;
   height: 72px;
   color: #fff;
   transition: all 0.5s;
-}
+} */
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -190,13 +191,16 @@ h6 {
 
 #hero:before {
   content: "";
+  background-size: 50%;
   background: url("../img/AAO_Logo.PNG") no-repeat center center;
+  /* background-size: contain; */
+  background-size: 50%;
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
-  transition: all 5s;
+  transition: all 3s;
 }
 
 #hero .hero-container {
@@ -211,7 +215,7 @@ h6 {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  transition: all 5s;
+  transition: all 2s;
 }
 
 #hero h1 {
