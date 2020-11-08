@@ -48,7 +48,11 @@
 
   <body>
     <!-- logo that fades out begin -->
-    <div id="div1" class="preloadpic" style="z-index: 11000; max-width: 100vw;">
+    <div
+      id="div1"
+      class="preloadpic"
+      style="position: absolute; z-index: 11000; width: 97vw;"
+    >
       <div>
         <center>
           <img
@@ -61,7 +65,7 @@
     </div>
     <!-- logo that fades out end -->
 
-    <div style="display: none;" id="div2" class="div22">
+    <div id="div2" class="div22">
       <!-- Begin Navbar -->
       <header
         style="
@@ -148,7 +152,7 @@
         TweenMax.to(".preloadpic", 2, {
           // scale: 0,
           // rotation: 180,
-          // opacity: 0,
+          opacity: 0,
           zIndex: 0,
           left: 0.5
           // top: 0.5,
@@ -179,10 +183,10 @@
     <script id="rendered-js">
       var tl = new TimelineMax({});
       tl.add(
-        TweenMax.from(".div22", 8, {
-          // scale: 3,
+        TweenMax.from(".div22", 6, {
+          scale: 0.75,
           // rotation: 180,
-          opacity: 0.2
+          opacity: 0
           // ease: Elastic.easeInOut
         })
       );
@@ -197,16 +201,33 @@
       //   })
       // );
     </script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       function showIt() {
         document.getElementById("div1").style.display = "none";
       }
-      setTimeout("showIt()", 2000); // after 1 sec
+      setTimeout("showIt()", 4000); // after 1 sec
 
       function showIt2() {
         document.getElementById("div2").style.display = "block";
       }
-      setTimeout("showIt2()", 2000); // after 5 secs
+      setTimeout("showIt2()", 1500); // after 5 secs
+    </script> -->
+    <script type="text/javascript">
+      function fadeout1() {
+        var fade1 = document.getElementById("div2");
+
+        var intervalID = setInterval(function () {
+          if (!fade1.style.opacity) {
+            fade1.style.opacity = 0;
+          }
+
+          if (fade1.style.opacity <= 1) {
+            fade1.style.opacity += 0.1;
+          } else {
+            clearInterval(intervalID);
+          }
+        }, 100);
+      }
     </script>
     <script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

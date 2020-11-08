@@ -47,6 +47,10 @@
 .bg-soft-warning {
   background-color: rgba(249, 213, 112, 0.3) !important;
 }
+.bg-soft-new {
+  background-color: rgb(197, 94, 197, 0.3);
+  color: purple;
+}
 .card {
   border: none;
   margin-bottom: 24px;

@@ -6,6 +6,20 @@
   text-justify: inter-word;
 } */
 
+.btn-primary {
+  background-color: #387ed1;
+  border-color: #387ed1;
+}
+/* .btn:hover {
+  background-color: #6195c0;
+  border-color: #6195c0;
+} */
+a {
+  color: #387ed1;
+}
+/* a:hover {
+  color: #6195c0;
+} */
 p {
   text-align: justify;
   text-justify: inter-word;
@@ -374,8 +388,9 @@ h6 {
 .nav-menu > li > a:before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 90%;
   height: 2px;
+  margin-left: 5%;
   bottom: 0;
   left: 0;
   background-color: #387ed1;
