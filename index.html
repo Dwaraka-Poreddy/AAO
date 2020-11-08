@@ -48,100 +48,114 @@
   </head>
 
   <body>
-    <!-- ======= Header ======= -->
-    <header
-      style="transition-delay: 10s; align-content: center; align-items: center;"
-      id="header"
-      class="header-transparent"
-    >
-      <div class="container">
-        <div id="logo" class="pull-left wrapper">
-          <a href="index.html"
-            ><img style="width: 90px;" src="assets/img/AAO_Logo.png" alt=""
-          /></a>
+    <div id="div1" class="preloadpic" style="z-index: 11000;">
+      <div>
+        <center>
+          <img
+            style="margin-top: 15vh;"
+            src="assets/img/AAO_Logo2.PNG"
+            alt=""
+          />
+        </center>
+      </div>
+    </div>
+    <div style="display: none;" id="div2" class="div22">
+      <!-- ======= Header ======= -->
+      <header
+        style="
+          transition-delay: 10s;
+          align-content: center;
+          align-items: center;
+        "
+        id="header"
+        class="header-transparent"
+      >
+        <div class="container">
+          <div id="logo" class="pull-left wrapper">
+            <a href="index.html"
+              ><img style="width: 90px;" src="assets/img/AAO_Logo.png" alt=""
+            /></a>
+          </div>
+
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+              <li class="menu-active"><a href="./index.html">Home</a></li>
+              <li><a href="./About.html">About Us</a></li>
+              <li><a href="./Work.html">Book of Work</a></li>
+              <li><a href="./Team.html">People</a></li>
+              <li><a href="./Reference.html">Reference</a></li>
+              <li><a href="./Contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+          <!-- #nav-menu-container -->
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- ======= Hero Section ======= -->
+      <section id="hero">
+        <div class="hero-container" data-aos="fade-right" data-aos-delay="5000">
+          <img
+            style="height: 200px; margin-bottom: 30px;"
+            src="assets/img/logo0.png"
+          />
+          <h2 style="width: 75%;">
+            Driving revenues with data, analytics and automation in all aspects
+            of the task force business. AAO is an autonomous initiative
+            currently covering Business, Sales and Outreach.
+          </h2>
+          <a href="./About.html" class="btn-get-started">Get Started</a>
+        </div>
+      </section>
+      <!-- End Hero Section -->
+
+      <!-- ======= Footer ======= -->
+      <footer style="position: absolute; right: 0; bottom: 0;" id="footer">
+        <div class="footer-top">
+          <div class="container"></div>
         </div>
 
-        <nav id="nav-menu-container">
-          <ul class="nav-menu">
-            <li class="menu-active"><a href="./index.html">Home</a></li>
-            <li><a href="./About.html">About Us</a></li>
-            <li><a href="./Work.html">Book of Work</a></li>
-            <li><a href="./Team.html">People</a></li>
-            <li><a href="./Reference.html">Reference</a></li>
-            <li><a href="./Contact.html">Contact Us</a></li>
-          </ul>
-        </nav>
-        <!-- #nav-menu-container -->
-      </div>
-    </header>
-    <!-- End Header -->
-
-    <!-- ======= Hero Section ======= -->
-    <section id="hero">
-      <!-- <img id="PreLoadImage" src="assets/img/AAO_Logo.PNG" /> -->
-      <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
-        <img
-          style="height: 200px; margin-bottom: 30px;"
-          src="assets/img/logo0.png"
-        />
-        <!-- <h1>We are AAO</h1> -->
-        <h2 style="width: 75%;">
-          Driving revenues with data, analytics and automation in all aspects of
-          the task force business. AAO is an autonomous initiative currently
-          covering Business, Sales and Outreach.
-        </h2>
-        <a href="./About.html" class="btn-get-started">Get Started</a>
-      </div>
-    </section>
-    <!-- End Hero Section -->
-
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-      <div class="footer-top">
-        <div class="container"></div>
-      </div>
-
-      <div class="container">
-        <div class="copyright">
-          &copy; Copyright <strong>AAO</strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          <!--
+        <div class="container">
+          <div class="copyright">
+            &copy; Copyright <strong>AAO</strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!--
         All the links in the footer should remain intact.
         You can delete the links only if you purchased the pro version.
         Licensing information: https://bootstrapmade.com/license/
         Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
       -->
-          Designed by <a href="https://bootstrapmade.com/">xxxxxxx</a>
+            Designed by <a href="https://bootstrapmade.com/">xxxxxxx</a>
+          </div>
         </div>
-      </div>
-    </footer>
-    <!-- End Footer -->
+      </footer>
+      <!-- End Footer -->
 
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+      <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-    <!-- Vendor JS Files -->
+      <!-- Vendor JS Files -->
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 
-    <script id="rendered-js">
+    <script id="rendered1-js">
       var tl = new TimelineMax({});
       tl.add(
-        TweenMax.from(".logo-svg", 3, {
+        TweenMax.from(".preloadpic", 2, {
           scale: 0,
-          rotation: 180,
-          opacity: 0,
-          ease: Elastic.easeInOut
+          // rotation: 180,
+          opacity: 0
+          // ease: Elastic.easeInOut
         })
       );
-
       tl.add(
-        TweenMax.to(".logo-svg", 3, {
-          scale: 0,
-          rotation: 180,
-          opacity: 0,
-          left: 0.5,
-          top: 0.5,
-          ease: Elastic.easeInOut
+        TweenMax.to(".preloadpic", 2, {
+          // scale: 0,
+          // rotation: 180,
+          // opacity: 0,
+          zIndex: 0,
+          left: 0.5
+          // top: 0.5,
         })
       );
     </script>
@@ -165,6 +179,38 @@
       //     ease: Elastic.easeInOut
       //   })
       // );
+    </script>
+    <script id="rendered-js">
+      var tl = new TimelineMax({});
+      tl.add(
+        TweenMax.from(".div22", 8, {
+          // scale: 3,
+          // rotation: 180,
+          opacity: 0.2
+          // ease: Elastic.easeInOut
+        })
+      );
+      // tl.add(
+      //   TweenMax.to(".wrapper", 3, {
+      //     scale: 0,
+      //     rotation: 180,
+      //     opacity: 0,
+      //     left: 0.5,
+      //     top: 0.5,
+      //     ease: Elastic.easeInOut
+      //   })
+      // );
+    </script>
+    <script type="text/javascript">
+      function showIt() {
+        document.getElementById("div1").style.display = "none";
+      }
+      setTimeout("showIt()", 2000); // after 1 sec
+
+      function showIt2() {
+        document.getElementById("div2").style.display = "block";
+      }
+      setTimeout("showIt2()", 2000); // after 5 secs
     </script>
     <script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
