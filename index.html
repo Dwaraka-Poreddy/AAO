@@ -51,15 +51,17 @@
     <div
       id="div1"
       class="preloadpic"
-      style="position: fixed; z-index: 11000; width: 100%;"
+      style="
+        position: fixed;
+        margin-top: 15vh;
+        z-index: 11000;
+        width: 100%;
+        background-color: rgba(255, 255, 255);
+      "
     >
       <div>
         <center>
-          <img
-            style="margin-top: 15vh;"
-            src="assets/img/AAO_Logo2.PNG"
-            alt=""
-          />
+          <img style="" src="assets/img/AAO_Logo2.PNG" alt="" />
         </center>
       </div>
     </div>
@@ -183,7 +185,7 @@
     <script id="rendered-js">
       var tl = new TimelineMax({});
       tl.add(
-        TweenMax.from(".div22", 6, {
+        TweenMax.from(".div22", 3, {
           scale: 0.75,
           // rotation: 180,
           opacity: 0
