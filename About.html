@@ -163,41 +163,61 @@ data-aos-easing="ease-in-sine">
                   <h2 class="scope" style="text-align:center; margin-bottom: 4.5%;">Horizontal Timeline</h2>
                   <div class="hori-timeline" dir="ltr">
                       <ul class="list-inline events">
+                          <div class="row">
+                              <div  class="feature col-lg-4 p-3 event-list">
                         <!-- Year 1 starts here -->
-                          <li class="list-inline-item event-list">
-                              <div class="px-4">
+                         
                                   <div class="event-date bg-soft-new ">2018</div>
-                                  <h5 class="font-size-16">Event One</h5>
-                                  <p class="text-muted">It will be as simple as occidental in fact it will be Occidental Cambridge friend</p>
-                                  <div>
-                                      <a href="#" class="btn btn-primary btn-sm">Read more</a>
+                                  <h5 style="padding-top:30px" class="font-size-16">Event One</h5>
+                                  <p class="text-muted">It will be as simple as occidental in fact it will be Occidental Cambridge friend
+                                      It will be as simple as occidental in fact it will be Occidental Cambridge friend
+                                  <span style="display:none" id="more1">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor 
+                                    vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed 
+                                    
+                                    non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                                  <div> 
+                                      
+                                      <!-- <a href="#" class="btn btn-primary btn-sm">Read more</a> -->
+                                      <button onclick="myFunction1()" id="myBtn1" class="btn btn-primary btn-sm">Read more</button>
                                   </div>
                               </div>
-                          </li>
+                        
                            <!-- Year 1 ends here -->
                             <!-- Year 2 starts here -->
-                          <li class="list-inline-item event-list">
-                              <div class="px-4">
-                                  <div class="event-date bg-soft-primary text-primary">2019</div>
-                                  <h5 class="font-size-16">Event Two</h5>
-                                  <p class="text-muted">Everyone realizes why a new common language one could refuse translators.</p>
-                                  <div>
-                                      <a href="#" class="btn btn-primary btn-sm">Read more</a>
-                                  </div>
-                              </div>
-                          </li>
+                            <div  class="feature col-lg-4 p-3 event-list">
+                                    <div class="event-date bg-soft-primary text-primary">2019</div>
+                                    <h5 style="padding-top:30px" style="padding-top:30px" class="font-size-16">Event Two</h5>
+                                    <p class="text-muted">It will be as simple as occidental in fact it will be Occidental Cambridge friend
+                                        It will be as simple as occidental in fact it will be Occidental Cambridge friend
+                                        <span style="display:none" id="more2">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor 
+                                          vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed 
+                                         
+                                          non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                                        <div> 
+                                            
+                                            <!-- <a href="#" class="btn btn-primary btn-sm">Read more</a> -->
+                                            <button onclick="myFunction2()" id="myBtn2" class="btn btn-primary btn-sm">Read more</button>
+                                        </div>
+                                </div>
+                      
                            <!-- Year 2 ends here -->
                             <!-- Year 3 starts here -->
-                          <li class="list-inline-item event-list">
-                              <div class="px-4">
+                            <div  class="feature col-lg-4 p-3 event-list">
                                   <div class="event-date bg-soft-success text-success">2020</div>
-                                  <h5 class="font-size-16">Event Three</h5>
-                                  <p class="text-muted">If several languages coalesce the grammar of the resulting simple and regular</p>
-                                  <div>
-                                      <a href="#" class="btn btn-primary btn-sm">Read more</a>
-                                  </div>
+                                  <h5 style="padding-top:30px" class="font-size-16">Event Three</h5>
+                                  <p class="text-muted">It will be as simple as occidental in fact it will be Occidental Cambridge friend
+                                      It will be as simple as occidental in fact it will be Occidental Cambridge friend
+                                      <span style="display:none" id="more3">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor 
+                                        vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed 
+                                        
+                                        non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                                      <div> 
+                                          
+                                          <!-- <a href="#" class="btn btn-primary btn-sm">Read more</a> -->
+                                          <button onclick="myFunction3()" id="myBtn3" class="btn btn-primary btn-sm">Read more</button>
+                                      </div>
                               </div>
-                          </li>
+                          </div>
                            <!-- Year 3 ends here -->
                       </ul>
                   </div>
@@ -273,6 +293,48 @@ data-aos-easing="ease-in-sine">
     <!--  Footer ends here-->
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <script>
+      function myFunction1() {
+        var moreText = document.getElementById("more1");
+        var btnText = document.getElementById("myBtn1");
+      
+        if (moreText.style.display === "none") {
+          btnText.innerHTML = "Read less"; 
+          moreText.style.display = "inline";
+         
+        } else {
+          btnText.innerHTML = "Read more"; 
+          moreText.style.display = "none";
+        }
+      }
+      function myFunction2() {
+        var moreText = document.getElementById("more2");
+        var btnText = document.getElementById("myBtn2");
+      
+        if (moreText.style.display === "none") {
+          btnText.innerHTML = "Read less"; 
+          moreText.style.display = "inline";
+         
+        } else {
+          btnText.innerHTML = "Read more"; 
+          moreText.style.display = "none";
+        }
+      }
+      function myFunction3() {
+        var moreText = document.getElementById("more3");
+        var btnText = document.getElementById("myBtn3");
+      
+        if (moreText.style.display === "none") {
+          btnText.innerHTML = "Read less"; 
+          moreText.style.display = "inline";
+         
+        } else {
+          btnText.innerHTML = "Read more"; 
+          moreText.style.display = "none";
+        }
+      }
+      </script>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/jquery/jquery.min.js"></script>
