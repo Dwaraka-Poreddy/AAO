@@ -1,17 +1,6 @@
 !(function ($) {
   "use strict";
 
-  // Header fixed and Back to top button
-  // $(window).scroll(function() {
-  //   if ($(this).scrollTop() > 100) {
-  //     $('.back-to-top').fadeIn('slow');
-  //     $('#header').addClass('header-fixed');
-  //   } else {
-  //     $('.back-to-top').fadeOut('slow');
-  //     $('#header').removeClass('header-fixed');
-  //   }
-  // });
-
   $(".back-to-top").click(function () {
     $("html, body").animate(
       {
@@ -133,28 +122,6 @@
   // Navigation active state on scroll
   var nav_sections = $("section");
   var main_nav = $(".nav-menu, #mobile-nav");
-
-  // $(window).on("scroll", function () {
-  //   var cur_pos = $(this).scrollTop() + 200;
-
-  //   nav_sections.each(function () {
-  //     var top = $(this).offset().top,
-  //       bottom = top + $(this).outerHeight();
-
-  //     if (cur_pos >= top && cur_pos <= bottom) {
-  //       if (cur_pos <= bottom) {
-  //         main_nav.find("li").removeClass("menu-active");
-  //       }
-  //       main_nav
-  //         .find('a[href="#' + $(this).attr("id") + '"]')
-  //         .parent("li")
-  //         .addClass("menu-active");
-  //     }
-  //     if (cur_pos < 300) {
-  //       $(".nav-menu li:first").addClass("menu-active");
-  //     }
-  //   });
-  // });
 
   // Porfolio isotope and filter
   $(window).on("load", function () {
