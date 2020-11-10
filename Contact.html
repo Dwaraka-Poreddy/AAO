@@ -8,8 +8,6 @@
     <meta content="" name="descriptison" />
     <meta content="" name="keywords" />
 
-    <!-- Favicons -->
-
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700"
@@ -39,80 +37,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
-    <style>
-      body {
-        padding-top: 100px;
-        /* background: "url(../img/about-img.jpg) center top no-repeat"; */
-      }
-      textarea {
-        resize: none;
-      }
-      input:-webkit-autofill,
-      input:-webkit-autofill:hover,
-      input:-webkit-autofill:active,
-      input:-webkit-autofill:focus {
-        background-color: #f00606 !important;
-        color: rgb(31, 6, 141) !important;
-        transition: background-color 5000s ease-in-out 0s;
-
-        -webkit-text-fill-color: #000 !important;
-      }
-      .form-label {
-        font-size: 12px;
-        color: #387ed1;
-        margin: 0;
-        display: block;
-        opacity: 1;
-        -webkit-transition: 0.333s ease top, 0.333s ease opacity;
-        transition: 0.333s ease top, 0.333s ease opacity;
-      }
-      .form-control {
-        color: #424242;
-        background: transparent;
-        border-radius: 0;
-        border-color: #ccc;
-        border-width: 0 0 2px 0;
-        border-style: none none solid none;
-        box-shadow: none;
-      }
-      .form-control:focus {
-        color: #424242;
-        background: transparent;
-        box-shadow: none;
-        border-color: #387ed1;
-      }
-      .js-hide-label {
-        background: transparent;
-        opacity: 0;
-      }
-      .js-unhighlight-label {
-        color: #999;
-        background: transparent;
-      }
-      .btn-start-order {
-        background: transparent;
-        border: 1px solid #f9fafc;
-        border-radius: 10px;
-        color: #ffffff;
-        font-family: "Raleway", sans-serif;
-        font-size: 16px;
-        line-height: inherit;
-        margin: 30px 0;
-        padding: 10px 50px;
-        text-transform: uppercase;
-        transition: all 0.25s ease 0s;
-        border-color: #387ed1;
-        color: #387ed1;
-        border: 2px solid #387ed1;
-      }
-      .btn-start-order:hover,
-      .btn-start-order:active,
-      .btn-start-order:focus {
-        background-color: #387ed1;
-        color: white;
-        border: 2px solid #fff;
-      }
-    </style>
+    <link rel="stylesheet" href="assets/css/Contact.css" />
   </head>
 
   <body>
@@ -123,8 +48,6 @@
           <a href="index.html"
             ><img style="width: 90px;" src="assets/img/AAO_Logo.png" alt=""
           /></a>
-          <!-- Uncomment below if you prefer to use a text logo -->
-          <!-- <h1><a href="#hero">AAO</a></h1> -->
         </div>
 
         <nav id="nav-menu-container">
@@ -138,7 +61,6 @@
             <li class="menu-active"><a href="./Contact.html">Contact Us</a></li>
           </ul>
         </nav>
-        <!-- #nav-menu-container -->
       </div>
     </header>
     <!-- End Header -->
@@ -162,97 +84,6 @@
               </button>
             </a>
           </div>
-        </div>
-      </div>
-      <div class="row d-flex justify-content-around">
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3">
-          <form
-            onsubmit="myFunction()"
-            action="https://formsubmit.co/941fee28f1556218a6bec06963f7fc99 "
-            method="POST"
-            id="contact-form"
-            class="form"
-            action="#"
-            method="POST"
-            role="form"
-            autocomplete="off"
-          >
-            <!-- <div class="form-group">
-              <input
-                type="hidden"
-                name="_next"
-                value="https://ftsvv.csb.app/"
-              />
-              <label class="form-label" for="name">Special ID number</label>
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                name="Special ID number"
-                placeholder="Special ID number"
-                tabindex="1"
-                required
-              />
-            </div> -->
-            <!-- <div class="form-group">
-              <label class="form-label" for="first_name">First Name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="first_name"
-                name="first_name"
-                placeholder="First Name"
-                tabindex="1"
-              />
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="last_name">Last Name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="last_name"
-                name="last_name"
-                placeholder="Last Name"
-                tabindex="2"
-              />
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="email">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                name="email"
-                placeholder="Email"
-                tabindex="3"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="subject">Subject</label>
-              <input
-                type="text"
-                class="form-control"
-                id="subject"
-                name="subject"
-                placeholder="Subject"
-                tabindex="4"
-              />
-            </div> 
-            <div class="form-group">
-              <label class="form-label" for="message">Message</label>
-              <textarea
-                rows="5"
-                cols="50"
-                name="message"
-                class="form-control"
-                id="message"
-                placeholder="Message..."
-                tabindex="5"
-                required
-              ></textarea>
-            </div>-->
-          </form>
         </div>
       </div>
     </div>
@@ -292,59 +123,5 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-    <script>
-      // function myFunction() {
-      //   window.location = "./index.html";
-      //   console.log("form submitted", window.location);
-      // }
-      $(document).ready(function () {
-        $.support.placeholder = (function () {
-          var i = document.createElement("input");
-          return "placeholder" in i;
-        })();
-
-        if ($.support.placeholder) {
-          $(".form-label").each(function () {
-            $(this).addClass("js-hide-label");
-          });
-
-          $(".form-group")
-            .find("input, textarea")
-            .on("keyup blur focus", function (e) {
-              var $this = $(this),
-                $label = $this.parent().find("label");
-
-              switch (e.type) {
-                case "keyup":
-                  {
-                    $label.toggleClass("js-hide-label", $this.val() == "");
-                  }
-                  break;
-                case "blur":
-                  {
-                    if ($this.val() == "") {
-                      $label.addClass("js-hide-label");
-                    } else {
-                      $label
-                        .removeClass("js-hide-label")
-                        .addClass("js-unhighlight-label");
-                    }
-                  }
-                  break;
-                case "focus":
-                  {
-                    if ($this.val() !== "") {
-                      $label.removeClass("js-unhighlight-label");
-                    }
-                  }
-                  break;
-                default:
-                  break;
-              }
-              // previous implementation with ifs
-            });
-        }
-      });
-    </script>
   </body>
 </html>

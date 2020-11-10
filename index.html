@@ -6,7 +6,6 @@
 
     <title>AAO Main Page</title>
 
-    <!-- Favicons -->
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700"
@@ -35,15 +34,6 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
-
-    <!-- <script>
-      window.console = window.console || function (t) {};
-    </script>
-    <script>
-      if (document.location.search.match(/type=embed/gi)) {
-        window.parent.postMessage("resize", "*");
-      }
-    </script> -->
   </head>
 
   <body>
@@ -61,7 +51,7 @@
     >
       <div>
         <center>
-          <img style="" src="assets/img/AAO_Logo2.PNG" alt="" />
+          <img src="assets/img/AAO_Logo2.PNG" alt="" />
         </center>
       </div>
     </div>
@@ -145,19 +135,14 @@
       tl.add(
         TweenMax.from(".preloadpic", 2, {
           scale: 0,
-          // rotation: 180,
           opacity: 0
-          // ease: Elastic.easeInOut
         })
       );
       tl.add(
         TweenMax.to(".preloadpic", 2, {
-          // scale: 0,
-          // rotation: 180,
           opacity: 0,
           zIndex: 0,
           left: 0.5
-          // top: 0.5,
         })
       );
     </script>
@@ -166,54 +151,20 @@
       tl.add(
         TweenMax.from(".wrapper", 4, {
           scale: 3,
-          // rotation: 180,
           opacity: 0,
           ease: Elastic.easeInOut
         })
       );
-      // tl.add(
-      //   TweenMax.to(".wrapper", 3, {
-      //     scale: 0,
-      //     rotation: 180,
-      //     opacity: 0,
-      //     left: 0.5,
-      //     top: 0.5,
-      //     ease: Elastic.easeInOut
-      //   })
-      // );
     </script>
     <script id="rendered-js">
       var tl = new TimelineMax({});
       tl.add(
         TweenMax.from(".div22", 3, {
           scale: 0.75,
-          // rotation: 180,
           opacity: 0
-          // ease: Elastic.easeInOut
         })
       );
-      // tl.add(
-      //   TweenMax.to(".wrapper", 3, {
-      //     scale: 0,
-      //     rotation: 180,
-      //     opacity: 0,
-      //     left: 0.5,
-      //     top: 0.5,
-      //     ease: Elastic.easeInOut
-      //   })
-      // );
     </script>
-    <!-- <script type="text/javascript">
-      function showIt() {
-        document.getElementById("div1").style.display = "none";
-      }
-      setTimeout("showIt()", 4000); // after 1 sec
-
-      function showIt2() {
-        document.getElementById("div2").style.display = "block";
-      }
-      setTimeout("showIt2()", 1500); // after 5 secs
-    </script> -->
     <script type="text/javascript">
       function fadeout1() {
         var fade1 = document.getElementById("div2");
